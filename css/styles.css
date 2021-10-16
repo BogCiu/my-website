@@ -1,11 +1,10 @@
 body {
-  background-image: url(Images/StockBackground.webp);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: rgba(112, 112, 204);
   background-size: 100% 100%;
 }
 img.portrait {
   width: 200px;
+  padding-left: 25px;
   border-radius: 80px;
   float: left;
   margin-right: 20px;
@@ -14,9 +13,35 @@ img.portrait {
   font-weight: bold;
   float: left;
 }
+.contactdetails_email_desc:hover {
+  cursor: help;
+}
 .contactdetails_email {
   font-style: italic;
   float: left;
   background-color: rgb(212, 212, 175);
   background-size: 20px;
+}
+.panel {
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 300;
+  left: 25px;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.panel-over {
+  width: 250px;
+  height: 400px;
+  position: fixed;
+  z-index: 1;
+  top: 300;
+  left: 25px;
+  overflow-x: hidden;
+  transition: 0.5s;
+
+  padding-top: 60px;
+  background-color: rgba(112, 112, 204);
 }
