@@ -2,18 +2,31 @@
 <html>
   <head>
     <title>Voicu Bogdan - System Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <img class="portrait" src=Images/BogdanPhoto.jpg>
-    <br />
-    <br />
-    <br />
-    <p class="contactdetails_email_desc">Email: </p>
-    <p class="contactdetails_email">Bogdan.Bog.Voicu@gmail.com</p>
-    <br />
-    <p>
-      Welcome, I am Bogdan, and this website exists as an extension to my CV
-    </p>
+    <button onclick="actionPanel()">Press me</button>
+    <div class="panel" id="panel">
+      <div class="panel-over" id="panel-over"></div>
+      <img class="portrait" src=Images/BogdanPhoto.jpg>
+      <br />
+      <br />
+      <br />
+      <div>
+        <p class="contactdetails_email">
+          <span class="contactdetails_email_desc">Email:</span
+          >Bogdan.Bog.Voicu@gmail.com
+        </p>
+      </div>
+
+      <br />
+      <p>
+        Welcome, I am Bogdan, and this website exists as an extension to my CV
+      </p>
+      <br />
+      <p>It is obviously, currently, a work in progress :)</p>
+    </div>
+    <script src="scripts/common.js"></script>
   </body>
 </html>
