@@ -1,0 +1,22 @@
+body {
+  background-image: url(Images/StockBackground.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+img.portrait {
+  width: 200px;
+  border-radius: 80px;
+  float: left;
+  margin-right: 20px;
+}
+.contactdetails_email_desc {
+  font-weight: bold;
+  float: left;
+}
+.contactdetails_email {
+  font-style: italic;
+  float: left;
+  background-color: rgb(212, 212, 175);
+  background-size: 20px;
+}
