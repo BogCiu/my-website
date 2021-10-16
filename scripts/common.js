@@ -11,11 +11,9 @@ function actionPanel() {
 }
 
 function openPanel() {
-  document.getElementById("panel-over").style.width = "250px";
-  document.getElementById("panel-over").style.left = "25px";
+  document.getElementById("panel").style.left = "25px";
 }
 
 function closePanel() {
-  document.getElementById("panel-over").style.width = "0";
-  document.getElementById("panel-over").style.left = "275px";
+  document.getElementById("panel").style.left = "-275px";
 }
