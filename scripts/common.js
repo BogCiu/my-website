@@ -11,9 +11,15 @@ function actionPanel() {
 }
 
 function openPanel() {
-  document.getElementById("panel").style.left = "25px";
+  document.getElementById("panel").style.left = "0px";
+  document.getElementById("panel_arrow").style.left = "270px";
+  document.getElementById("panel_arrow").innerHTML = "<";
+  document.getElementById("main_page").style.left = "270px";
 }
 
 function closePanel() {
-  document.getElementById("panel").style.left = "-275px";
+  document.getElementById("panel").style.left = "-270px";
+  document.getElementById("panel_arrow").style.left = "0px";
+  document.getElementById("panel_arrow").innerHTML = ">";
+  document.getElementById("main_page").style.left = "0px";
 }
