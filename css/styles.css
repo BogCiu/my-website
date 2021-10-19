@@ -2,28 +2,22 @@ body {
   background-color: rgb(255, 255, 255);
   background-size: 100% 100%;
 }
+text {
+}
 img.portrait {
   width: 200px;
   padding-left: 25px;
   border-radius: 80px;
-  float: left;
+  float: none;
   margin-right: 20px;
 }
-.contactdetails_email_desc {
-  font-weight: bold;
-  float: left;
-}
-.contactdetails_email_desc:hover {
-  cursor: help;
-}
-.contactdetails_email {
-  font-style: italic;
-  float: left;
-  background-color: rgb(212, 212, 175);
-  background-size: 20px;
-}
 .panel {
-  background-color: rgba(125, 125, 241, 0.527);
+  background-image: linear-gradient(
+    to right,
+    rgba(10, 10, 139, 0.842),
+    rgba(10, 10, 139, 0.842),
+    rgba(46, 46, 248, 0.842)
+  );
   width: 250px;
   height: 100vh;
   position: fixed;
@@ -36,7 +30,7 @@ img.portrait {
   float: left;
 }
 .panel_arrow {
-  background-color: rgba(4, 4, 255, 0.527);
+  background-color: rgba(10, 10, 139, 0.842);
   top: 0vh;
   left: 0px;
   padding: 5px;
@@ -49,34 +43,85 @@ img.portrait {
   cursor: pointer;
 }
 .main_page {
-  background-color: rgba(255, 0, 0, 0.24);
+  background-image: linear-gradient(
+    to left,
+    rgba(10, 10, 139, 0.842),
+    rgba(46, 46, 248, 0.842),
+    rgba(10, 10, 139, 0.842),
+    rgba(46, 46, 248, 0.842),
+    rgba(10, 10, 139, 0.842)
+  );
   z-index: 1;
+  position: absolute;
   max-width: 100vw;
-  vertical-align: middle;
-  height: 100vh;
-  position: fixed;
   top: 0px;
   left: 0px;
   padding: 10px;
   padding-left: 50px;
-  transition: 0.5s;
+  padding-right: 50px;
+  transition-duration: 0.5s;
 }
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+img.social-link {
+  width: 32px;
+  height: 32px;
+  float: left;
+  padding-right: 20px;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  padding-top: 6px;
 }
-.icon-github:before {
-  content: "\eab0";
+img.social-link:hover {
+  transform: scale(1.3);
 }
-.icon-linkedin:before {
-  content: "\eac9";
+img.social-link-bigger_f {
+  width: 44px;
+  height: 44px;
+  float: left;
+  padding-right: 10px;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  padding-top: 3px;
+  align-self: center;
+}
+img.social-link-bigger_f:hover {
+  transform: scale(1.3);
+}
+img.social-link-bigger_i {
+  width: 40px;
+  height: 40px;
+  float: left;
+  padding-right: 10px;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  padding-top: 6px;
+  align-self: center;
+}
+img.social-link-bigger_i:hover {
+  transform: scale(1.3);
+}
+img.social-email {
+  width: 46px;
+  height: 46px;
+  margin-bottom: auto;
+  float: none;
+  padding-right: 20px;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+img.social-email:hover {
+  transform: scale(1.3);
+}
+.normal-text {
+  align-self: center;
+  padding-right: ;
+  color: white;
+  font-size: 26px;
+}
+.panel-text {
+  color: white;
+  font-size: 20px;
+}
+.empty-space {
+  width: 20px;
+  height: 20px;
+}

@@ -1,4 +1,4 @@
-var pannel_state = true;
+var pannel_state = false;
 
 function actionPanel() {
   if (!pannel_state) {
